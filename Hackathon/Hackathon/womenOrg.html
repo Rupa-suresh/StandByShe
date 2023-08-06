@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Women Organizer Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  
+
+  <div class="cases-list">
+    <!-- Case 1 -->
+    <div class="case">
+      <h2>Case 1</h2>
+      <p>Victim Number</p>
+      <p>Issue:today i went through an ill situation in our locality ,a goup of boys tried to harrass me.i felt a little disowned at that time</p>
+      <p>Status:verified</p>
+      <button onclick="sendHelp('case1')">Send Help</button><br>
+      <button onclick="moveToPolice('case1')">Move to Police</button>
+    </div>
+
+    <!-- Case 2 -->
+    <div class="case">
+      <h2>Case 2</h2>
+      <p>Victim Number:2</p>
+      <p>Issue:from past few days iam being harrassed by my husband ..I dont actually know how to respond to this .I dont know how to tell this to my parents exactly but its like covering up my sad side all alone</p>
+      <p>Status:verified</p>
+      <button onclick="sendHelp('case2')">Send Help</button><br>
+      <button onclick="moveToPolice('case2')">Move to Police</button>
+    </div>
+
+    <!-- Additional cases can be displayed in a similar manner -->
+  </div>
+
+  <a href="index.html">Logout</a>
+
+  <script>
+    function sendHelp(caseId) {
+      // Function to send help to the victim, e.g., through email or other communication channels.
+      // Implement backend logic here to notify the victim.
+      console.log(`Sending help for Case ${caseId}`);
+    }
+
+    function moveToPolice(caseId) {
+      // Function to move the case to police with the victim's permission.
+      // Implement backend logic here to update the case status and notify the police.
+      console.log(`Moving Case ${caseId} to Police`);
+    }
+  </script>
+</body>
+</html>
