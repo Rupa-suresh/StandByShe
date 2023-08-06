@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Women Organizer Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Welcome, [Organizer Name]!</h1>
+
+  <div class="cases-list">
+    <!-- Case 1 -->
+    <div class="case">
+      <h2>Case 1</h2>
+      <p>Victim Name: [Victim Name]</p>
+      <p>Issue: [Issue]</p>
+      <p>Status: [Status]</p>
+      <button onclick="sendHelp('case1')">Send Help</button>
+      <button onclick="moveToPolice('case1')">Move to Police</button>
+    </div>
+
+    <!-- Case 2 -->
+    <div class="case">
+      <h2>Case 2</h2>
+      <p>Victim Name: [Victim Name]</p>
+      <p>Issue: [Issue]</p>
+      <p>Status: [Status]</p>
+      <button onclick="sendHelp('case2')">Send Help</button>
+      <button onclick="moveToPolice('case2')">Move to Police</button>
+    </div>
+
+    <!-- Additional cases can be displayed in a similar manner -->
+  </div>
+
+  <a href="index.html">Logout</a>
+
+  <script>
+    function sendHelp(caseId) {
+      // Function to send help to the victim, e.g., through email or other communication channels.
+      // Implement backend logic here to notify the victim.
+      console.log(`Sending help for Case ${caseId}`);
+    }
+
+    function moveToPolice(caseId) {
+      // Function to move the case to police with the victim's permission.
+      // Implement backend logic here to update the case status and notify the police.
+      console.log(`Moving Case ${caseId} to Police`);
+    }
+  </script>
+</body>
+</html>
